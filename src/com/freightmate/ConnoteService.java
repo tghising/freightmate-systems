@@ -26,7 +26,7 @@ public class ConnoteService {
     }
 
     // generate Carrier Name prefix of Capital letters only
-    public String getPrefix(String carrierName) {
+    private String getPrefix(String carrierName) {
         char[] carrierNames = carrierName.toCharArray();
         String prefix = "";
         for (int i = 0; i < carrierNames.length; i++) {
@@ -38,7 +38,7 @@ public class ConnoteService {
     }
 
     // method calculate checksum of given consignment index with number of digits
-    public int checkSum(String consignmentIndex, int digit) {
+    private int checkSum(String consignmentIndex, int digit) {
         int checkSum = 0;
         int firstCheckSum = 0;
         int secondCheckSum = 0;
